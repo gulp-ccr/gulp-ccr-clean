@@ -8,11 +8,11 @@
  * del
  *
  */
-function cleanTask(done) {
+function cleanTask() {
 	// lazy loading required modules.
 	var del = require('del');
 
-	del(this.config.dest.path, done);
+	return del(this.config.dest.path);
 }
 
 cleanTask.schema = {
