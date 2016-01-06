@@ -1,2 +1,2 @@
 # gulp-ccr-clean
-Configurable gulp recipe plugin that ...
+Cascading Configurable Gulp Recipe for gulp-chef that clean build outputs.
