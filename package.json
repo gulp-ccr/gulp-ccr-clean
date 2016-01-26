@@ -1,7 +1,7 @@
 {
   "name": "gulp-ccr-clean",
   "version": "0.1.0",
-  "description": "Configurable gulp recipe plugin that ...",
+  "description": "Clean up dest folder. A cascading configurable Gulp recipe for gulp-chef.",
   "main": "index.js",
   "repository": {
     "type": "git",

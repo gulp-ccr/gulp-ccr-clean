@@ -17,7 +17,7 @@ function cleanTask() {
 
 cleanTask.schema = {
 	title: 'clean',
-	description: '',
+	description: 'Clean up `dest` folder.',
 	properties: {
 		dest: {
 			description: 'The output path to clean.',
