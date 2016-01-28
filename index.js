@@ -1,23 +1,9 @@
 'use strict';
 
-/**
- * Recipe:
- * clean build output
- *
- * Ingredients:
- * del
- *
- */
-function cleanTask() {
-	// lazy loading required modules.
-	var del = require('del');
-
-	return del(this.config.dest.path, this.config.options);
-}
-
-cleanTask.schema = {
+var schema = {
 	title: 'clean',
-	description: 'Clean up `dest` folder.',
+	description: 'Clean up destination folder.',
+	type: 'object',
 	properties: {
 		dest: {
 			description: 'The output path to clean.',
@@ -42,6 +28,13 @@ cleanTask.schema = {
 	required: ['dest']
 };
 
-cleanTask.type = 'task';
+function clean() {
+	// lazy loading required modules.
+	var del = require('del');
 
-module.exports = cleanTask;
+	return del(this.config.dest.path, this.config.options);
+}
+
+module.exports = clean;
+module.exports.schema = schema;
+module.exports.type = 'task';
