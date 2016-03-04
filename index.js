@@ -12,13 +12,13 @@ var schema = {
 		options: {
 			type: 'object',
 			properties: {
-				force: {
-					description: 'Allow deleting the current working directory and files/folders outside it.',
+				dryRun: {
+					description: 'See what would be deleted.',
 					type: 'boolean',
 					default: false
 				},
-				dryRun: {
-					description: 'See what would be deleted.',
+				force: {
+					description: 'Allow deleting the current working directory and files/folders outside it.',
 					type: 'boolean',
 					default: false
 				}
